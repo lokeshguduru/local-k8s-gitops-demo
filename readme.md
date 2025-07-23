@@ -9,13 +9,6 @@ This project demonstrates a fully automated **GitOps** workflow using a local **
 3.  **Deployment**: The user applies a single YAML file (`argocd-app.yaml`) to Argo CD. This file tells Argo CD to monitor a public Git repository.
 4.  **Automated Sync**: Argo CD automatically pulls the Kubernetes manifests from the target repository and deploys the "guestbook" application. It continuously monitors the repository, and any changes committed to the Git repo are automatically applied to the cluster.
 
-## Key Skills Demonstrated
-
--   **Kubernetes**: Rapidly provisioning and managing a local Kubernetes environment.
--   **GitOps**: Implementing a modern, hands-off deployment strategy with Argo CD.
--   **Declarative Configuration**: Managing both applications and infrastructure as version-controlled code.
--   **Automation**: Scripting the entire setup process for one-command execution.
-
 ## How to Run This Demo
 
 **Prerequisites**: You must have [Docker](https://www.docker.com/products/docker-desktop/) and [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation) installed.
